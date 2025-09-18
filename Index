@@ -39,6 +39,7 @@
                         <label><input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor</label>
                         <label><input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor</label>
                     </fieldset>
+                    <fieldset></fieldset>
                     <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                     <button type="submit">Submit</button>
                 </form>
