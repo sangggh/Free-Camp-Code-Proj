@@ -9,4 +9,6 @@ body{
 #menu {
   width: 80%;
   background-color: burlywood;
+  margin-right: auto;
+  margin-left: auto;
 }
