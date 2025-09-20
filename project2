@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <style>
             h1 {
-                text-alaign: center;
+                text-align: center;
             }
         </style>
         <title>Cafe Menu</title>
