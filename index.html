@@ -14,9 +14,16 @@
       <label id="number-label">What is your Age: <input id="number" type="number" name="number" min="18" max="100" placeholder="Enter Your Number" required></label>
       <fieldset>
         <legend>How was the movement of the game?</legend>
-          <label>Bad<input type="radio"></label>
-          <label>Neutral<input type="radio"></label>
-          <label>Good<input type="radio"></label>
+        <label>Bad<input type="radio" value="feed-back" name="feed-back"></label>
+        <label>Neutral<input type="radio" value="feed-back" name="feed-back"></label>
+        <label>Good<input type="radio" value="feed-back" name="feed-back"></label>
+      </fieldset>
+      <fieldset>
+        <legend>What device did you use?</legend>
+        <label><input type="checkbox" value="device">Phone</label>
+        <label><input type="checkbox" value="device">Laptop</label>
+        <label><input type="checkbox" value="device">Computer</label>
+        <label><input type="checkbox" value="device">Other</label>
       </fieldset>
       <label> Where did you hear about us?
         <select id="dropdown">
@@ -29,7 +36,10 @@
           <option value="6">Other</option>
         </select>
       </label>
+      <label for="feed"> What can we improve?
+        <textarea id="feed" rows="3" cols="30"placeholder="You can..."></textarea>
+      </label>
+      <input type="submit" id="submit" value="Submit">
     </form>
   </body>
 </html>
-
