@@ -6,40 +6,62 @@
     <title>Survey Form</title>
     </head>
   <body>
-    <h1 id="title"> Survey Form</h1>
-    <p id="description">Thank you for playing! Please take a few minutes to rate us so we can serve you better.</p>
-    <form id="survey-form">
-      <label id="name-label">What is your Name: <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required></label>
-      <label id="email-label">What is your Email: <input id="email" type="email" name="email" placeholder="Enter Your Email Address" required></label>
-      <label id="number-label">What is your Age: <input id="number" type="number" name="number" min="18" max="100" placeholder="Enter Your Number" required></label>
-      <fieldset>
-        <legend>How was the movement of the game?</legend>
-        <label>Bad<input type="radio" value="feed-back" name="feed-back"></label>
-        <label>Neutral<input type="radio" value="feed-back" name="feed-back"></label>
-        <label>Good<input type="radio" value="feed-back" name="feed-back"></label>
-      </fieldset>
-      <fieldset>
-        <legend>What device did you use?</legend>
-        <label><input type="checkbox" value="device">Phone</label>
-        <label><input type="checkbox" value="device">Laptop</label>
-        <label><input type="checkbox" value="device">Computer</label>
-        <label><input type="checkbox" value="device">Other</label>
-      </fieldset>
-      <label> Where did you hear about us?
-        <select id="dropdown">
-          <option value="">(select one)</option>
-          <option value="1">Referral</option>
-          <option value="2">Social Media</option>
-          <option value="3">Ad</option>
-          <option value="4">Another Website</option>
-          <option value="5">Search Engine</option>
-          <option value="6">Other</option>
-        </select>
-      </label>
-      <label for="feed"> What can we improve?
-        <textarea id="feed" rows="3" cols="30"placeholder="You can..."></textarea>
-      </label>
-      <input type="submit" id="submit" value="Submit">
-    </form>
+    <div class="main-container">
+      <div class="header-card">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">
+          Thank you for playing! Please take a few minutes to rate us so we can serve you better.
+        </p>
+      </div>
+      <div class="form-card">
+        <form id="survey-form">
+          <label id="name-label">What is your Name:
+            <input id="name" type="text" name="name" placeholder="Enter Your Full Name" required>
+          </label>
+
+          <label id="email-label">What is your Email:
+            <input id="email" type="email" name="email" placeholder="Enter Your Email Address" required>
+          </label>
+
+          <label id="number-label">What is your Age:
+            <input id="number" type="number" name="number" min="18" max="100" placeholder="Enter Your Number" required>
+          </label>
+
+          <fieldset>
+            <legend>How was the movement of the game?</legend>
+            <label><input type="radio" name="movement"> Bad</label>
+            <label><input type="radio" name="movement"> Neutral</label>
+            <label><input type="radio" name="movement"> Good</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How was the mechanics of the game?</legend>
+            <label><input type="radio" name="mechanics"> Bad</label>
+            <label><input type="radio" name="mechanics"> Neutral</label>
+            <label><input type="radio" name="mechanics"> Good</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>How was the gacha of the game?</legend>
+            <label><input type="radio" name="gacha"> Bad</label>
+            <label><input type="radio" name="gacha"> Neutral</label>
+            <label><input type="radio" name="gacha"> Good</label>
+          </fieldset>
+
+          <label>Where did you hear about us?
+            <select id="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Referral</option>
+              <option value="2">Social Media</option>
+              <option value="3">Ad</option>
+              <option value="4">Another Website</option>
+              <option value="5">Search Engine</option>
+              <option value="6">Other</option>
+            </select>
+          </label>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
   </body>
 </html>
